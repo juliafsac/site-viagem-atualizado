@@ -1,0 +1,31 @@
+.section-mid{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-elementos{
+    
+    width: 1320px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.estrutura-titulo{
+    width: 1320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.caixa-qualidades{
+    margin-top: 50px ;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+}
