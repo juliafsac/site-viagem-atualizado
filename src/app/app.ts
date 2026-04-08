@@ -1,14 +1,26 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { Menu } from './menu/menu'
-import { Tourz } from './tourz/tourz';
+import { Component, signal } from "@angular/core";
+import { RouterOutlet } from "@angular/router";
+import { Menu } from "./menu/menu";
+import { Tourz } from "./tourz/tourz";
+import { Footer} from "./footer/footer";
+import { Banner } from "./banner/banner";
+import { Trending } from "./trending/trending";
+import { Telefone } from "./telefone/telefone";
+import { Costumer } from "./costumer/costumer";
+import { Articles } from "./articles/articles";
+import { Popular } from "./popular/popular";
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Menu, Tourz],
+  standalone: true,
+  imports: [RouterOutlet, Menu, Tourz, Footer, Banner, Trending, Telefone, Costumer, Articles, Popular],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
+
+
 export class App {
-  protected readonly title = signal('projeto-novo');
+  protected readonly title = signal('projeto-perifericos-angular');
 }
+
